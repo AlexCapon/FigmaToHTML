@@ -1,8 +1,5 @@
 html {
-  font-size: 54.8%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  font-size: 0.666vmax;
 }
 
 * {
