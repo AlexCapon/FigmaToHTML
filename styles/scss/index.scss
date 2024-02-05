@@ -2,7 +2,8 @@ $mainWidth: 100%;
 $pageWidth: 95%;
 
 html {
-  font-size:0.666vmax ;
+  font-size:0.666vmax;
+  min-width: 666px;
 }
 * {
 	margin: 0;
@@ -18,7 +19,7 @@ input {
 body {
   width: $mainWidth;
 }
-.figma-to-html-test-G4s {
+.figma-to-html-test {
   display: flex;
   flex-direction: column;
   background-color: #191919;
@@ -28,7 +29,7 @@ body {
   width: $mainWidth;
   max-width: $mainWidth;
 
-  .navbar-container-Bb9 {
+  .navbar-container {
     background-color: #191919;
     flex-shrink: 0;
     box-sizing: border-box;
@@ -36,7 +37,7 @@ body {
     height: 11.9rem;
     width: $pageWidth;
 
-    .navbar-row-sko {
+    .navbar-row {
       height: 100%;
       display: flex;
       align-items: center;
@@ -44,7 +45,7 @@ body {
       padding: 0.008rem 0rem 0.008rem 0.058rem;
   
 
-      .logo-imR {
+      .logo {
         height: 3.262rem;
         object-fit: contain;
         vertical-align: top;
@@ -52,14 +53,14 @@ body {
         margin: 0rem 79.727rem 0.022rem 0rem;
         width: 15.9155rem;
       }
-      .navbar-yST {
+      .navbar {
         margin: 0.292rem 0;
         height: calc(100% - 0.584rem);
         display: flex;
         align-items: center;
         flex-shrink: 0;
 
-        .home-navbar-5VV {
+        .home-navbar {
           cursor: pointer;
           white-space: nowrap;
           font-family: DM Sans, 'Source Sans Pro';
@@ -70,7 +71,7 @@ body {
           line-height: 1.5882352941;
           color: #118da8;
         }
-        .episodes-navbar-HLf {
+        .episodes-navbar {
           margin-right: 4.3rem;
           font-size: 1.7rem;
           line-height: 1.5882352941;
@@ -81,7 +82,7 @@ body {
           font-family: DM Sans, 'Source Sans Pro';
           white-space: nowrap;
         }
-        .about-navbar-kk3 {
+        .about-navbar {
           color: #ffffff;
           flex-shrink: 0;
           font-weight: 400;
@@ -92,7 +93,7 @@ body {
           white-space: nowrap;
           margin-right: 4.2rem;
         }
-        .contact-navbar-dYw {
+        .contact-navbar {
           white-space: nowrap;
           flex-shrink: 0;
           cursor: pointer;
@@ -105,9 +106,11 @@ body {
       }
     }
   }
-  .main-page-content-W6w {
+  .main-page-content {
     margin: 0 2rem;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
     padding: 1.4rem 2.4rem 0rem 2.4rem;
     // width: calc($mainWidth - 4rem);
     width: $pageWidth;
@@ -115,20 +118,20 @@ body {
     border-radius: 0.6rem;
     flex-shrink: 0;
 
-    .main-page-xjd {
+    .main-page {
       align-items: center;
-      width: 126.2rem;
+      width: 100%;
       height: 100%;
       display: flex;
 
-      .main-page-images-container-4nf {
+      .main-page-images-container {
         height: 100%;
         position: relative;
         flex-shrink: 0;
         margin-right: 6rem;
-        width: 67.6rem;
+        width: 50%;
 
-        .main-guy-photo-am1 {
+        .main-guy-photo {
           position: absolute;
           left: 2.6rem;
           top: 2.6rem;
@@ -137,7 +140,7 @@ body {
           width: 65rem;
           height: 87.3rem;
 
-          .image-3uV {
+          .image {
             vertical-align: top;
             border-radius: 1.2rem;
             width: 65rem;
@@ -145,57 +148,29 @@ body {
             object-fit: cover;
           }
         }
-        .vectors-image-main-page-pBV {
-          left: 0;
-          top: 0;
-          overflow: hidden;
+        .vector-image {
           width: 6.7026rem;
           height: 7.3433rem;
           position: absolute;
-
-          .auto-group-xdik-inf {
-            width: calc($mainWidth - 0.5523rem);
-            display: flex;
-            align-items: flex-start;
-            margin: 0rem 0rem 1.766rem 0.552rem;
-
-            .vector2-dud {
-              margin: 1.181rem 1.858rem 0rem 0rem;
-              width: 3.7015rem;
-              height: 3.5507rem;
-              object-fit: contain;
-              vertical-align: top;
-              flex-shrink: 0;
-            }
-            .vector1-9NB {
-              width: 0.5906rem;
-              height: 2.3063rem;
-              object-fit: contain;
-              vertical-align: top;
-              flex-shrink: 0;
-            }
-          }
-          .vector3-h8o {
-            height: 0.8458rem;
-            object-fit: contain;
-            vertical-align: top;
-            width: 2.423rem;
-          }
+          left: 0;
+          top: 0;
+          object-fit: contain;
+          vertical-align: top;
         }
       }
-      .main-page-main-content-EeX {
-        width: 52.6rem;
+      .main-page-main-content {
+        width: 50%;
         height: calc(100% - 47.3rem);
         flex-shrink: 0;
         margin: 32rem 0rem 15.3rem 0rem;
 
-        .main-page-text-text-container-ksm {
+        .main-page-text-text-container {
       
           display: flex;
           flex-direction: column;
           margin-bottom: 7.4rem;
 
-          .take-your-podcast-to-the-ho1 {
+          .main-text-line {
             color: #ffffff;
             font-family: DM Sans, 'Source Sans Pro';
             flex-shrink: 0;
@@ -205,7 +180,7 @@ body {
             line-height: 1.2571428571;
             letter-spacing: 0.32rem;
           }
-          .auto-group-vdek-24b {
+          .main-page-text-group {
             flex-shrink: 0;
             margin-right: 14.4rem;
             width: calc($mainWidth - 14.4rem);
@@ -213,14 +188,14 @@ body {
             display: flex;
             align-items: flex-start;
 
-            .frame-M6s {
+            .frame {
               margin-right: 2.1rem;
               width: 16.4rem;
               height: 100%;
               position: relative;
               flex-shrink: 0;
 
-              .image-J27 {
+              .underline {
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -229,7 +204,7 @@ body {
                 width: 16rem;
                 height: 10.4rem;
               }
-              .next-Kxo {
+              .next {
                 font-size: 7.5rem;
                 color: #ffffff;
                 font-family: DM Sans, 'Source Sans Pro';
@@ -244,7 +219,7 @@ body {
                 letter-spacing: 0.32rem;
               }
             }
-            .level-zp3 {
+            .level {
               color: #ffffff;
               font-family: DM Sans, 'Source Sans Pro';
               white-space: nowrap;
@@ -256,13 +231,12 @@ body {
             }
           }
         }
-        .main-page-links-container-7dm {
+        .main-page-links-container {
           box-sizing: border-box;
           padding: 0rem 3.9rem 0rem 2.2rem;
           width: 28.9rem;
           border-radius: 0.8rem;
-
-          .listen-on-title-Sg3 {
+          .listen-on-title {
             line-height: 1.6;
             color: #ffffff;
             font-family: DM Sans, 'Source Sans Pro';
@@ -271,14 +245,12 @@ body {
             font-size: 1.5rem;
             font-weight: 400;
           }
-          .main-page-podcast-links-a1Z {
+          .main-page-podcast-links {
             display: flex;
             align-items: center;
             box-sizing: border-box;
             padding: 0rem 0.2rem 0rem 0.005rem;
-        
-
-            .spotify-tY3 {
+            .spotify {
               height: 3.1902rem;
               cursor: pointer;
               object-fit: contain;
@@ -287,7 +259,7 @@ body {
               margin: 0.001rem 1.771rem 0rem 0rem;
               width: 3.1902rem;
             }
-            .podcast-platform-R2B {
+            .podcast-platform {
               margin-right: 1.7287rem;
               width: 3.1054rem;
               height: 3.2rem;
@@ -296,7 +268,7 @@ body {
               vertical-align: top;
               flex-shrink: 0;
             }
-            .soundcloud-x27 {
+            .soundcloud {
               flex-shrink: 0;
               margin-right: 1.7341rem;
               width: 3.1659rem;
@@ -305,7 +277,7 @@ body {
               object-fit: contain;
               vertical-align: top;
             }
-            .apple-podcast-gD1 {
+            .apple-podcast {
               height: 3.2rem;
               cursor: pointer;
               object-fit: contain;
@@ -314,7 +286,7 @@ body {
               margin-right: 1.8875rem;
               width: 3.2rem;
             }
-            .radio-tower-Dij {
+            .radio-tower {
               cursor: pointer;
               position: relative;
               object-fit: contain;
