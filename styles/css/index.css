@@ -1,6 +1,7 @@
 html {
-  font-size: 0.666vmax;
+  font-size: 0.69vmax;
   min-width: 666px;
+  background-color: #191919;
 }
 
 * {
@@ -19,7 +20,7 @@ input {
 }
 
 body {
-  width: 100%;
+  width: 98.7vw;
 }
 
 .figma-to-html-test {
